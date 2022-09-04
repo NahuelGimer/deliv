@@ -1,0 +1,71 @@
+/*=============== HOME ===============*/
+.home {
+	&__container {
+		row-gap: 6rem;
+	}
+	&__divider {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+	&__title {
+		font-size: var(--biggest-font-size);
+		font-weight: var(--font-bold);
+		margin-bottom: var(--mb-0-75);
+	}
+	&__title:first-child {
+		margin-top: 40px;
+	}
+	&__title-last {
+		position: relative;
+		bottom: -80px;
+	}
+	&__description {
+		font-size: var(--h3-font-size);
+		color: var(--title-color);
+		position: relative;
+		bottom: 140px;
+	}
+	&__description-last {
+		width: 100%;
+		position: relative;
+		bottom: 220px;
+	}
+	&__text-first {
+		position: relative;
+		left: 30px;
+	}
+	&__text-second {
+		position: relative;
+		bottom: -30px;
+		left: 40px;
+	}
+	&__text-fourth {
+		position: relative;
+		left: -140px;
+	}
+	&__button {
+		position: relative;
+		top: 280px;
+	}
+	&__button.short {
+		position: relative;
+		top: -50px;
+	}
+	&__button > a {
+		position: relative;
+		bottom: 85px;
+	}
+	&__button > a:first-child {
+		margin-right: 20px;
+	}
+	&__button > a:nth-child(2n) {
+		margin-left: 20px;
+	}
+	&__svg {
+		margin: auto;
+	}
+	&__svg:first-child {
+		margin: auto;
+	}
+}
