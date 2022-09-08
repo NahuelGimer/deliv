@@ -355,7 +355,9 @@ i {
   line-height: 35px;
 }
 .button:hover {
-  background-color: var(--first-color);
+  color: inherit;
+  -webkit-box-shadow: 0px 0px 10px -4px #000;
+          box-shadow: 0px 0px 10px -4px #000;
 }
 .button__header {
   display: -webkit-box;
@@ -368,9 +370,6 @@ i {
   background: none;
   padding: 0;
   color: var(--title-color);
-}
-.button-link:hover {
-  background-color: transparent;
 }
 .button__icon {
   position: relative;
@@ -510,7 +509,7 @@ i {
             justify-content: space-between;
     position: relative;
     left: 0;
-    bottom: -200px;
+    bottom: -150px;
   }
 
   .large:nth-child(2n) {
@@ -600,16 +599,38 @@ i {
   .home__text-fourth {
     width: 100%;
     position: relative;
-    margin-left: 200px;
+    margin-left: 180px;
     text-align: center;
   }
+  .home__title-last {
+    position: relative;
+    left: 52.5px;
+  }
+  .home__description-last {
+    position: relative;
+    left: 72.5px;
+  }
   .home__button.large {
-    width: 330px;
+    width: 320px;
+    position: relative;
+    left: 60px;
+    top: 310px;
   }
   .home__contact a {
     position: relative;
     bottom: 0px;
     margin: auto 10px;
+    position: relative;
+    top: 20px;
+  }
+  .home__contact .button {
+    padding-bottom: 0.5rem;
+  }
+
+  .button {
+    margin-top: 0rem;
+    line-height: 10px;
+    padding-bottom: 1.2rem;
   }
 
   .about__container,
@@ -656,10 +677,18 @@ i {
     left: -100px;
   }
   .home__title-last {
-    margin-bottom: 30px;
+    position: relative;
+    left: 143px;
   }
   .home__description-last {
-    margin-bottom: 40px;
+    position: relative;
+    left: 165px;
+  }
+  .home__button.large {
+    width: 385px;
+    position: relative;
+    left: 120px;
+    top: 310px;
   }
 
   .button {
@@ -676,17 +705,5 @@ i {
     position: relative;
     right: 0;
     top: 0;
-  }
-}
-@media screen and (min-width: 1380px) {
-  .home__text-fourth {
-    position: relative;
-    left: 70px;
-    top: 30px;
-  }
-  .home__button.large {
-    width: 450px;
-    position: relative;
-    left: -65px;
   }
 }

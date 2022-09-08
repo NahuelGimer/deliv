@@ -127,19 +127,39 @@
 		&__text-fourth {
 			width: 100%;
 			position: relative;
-			margin-left: 200px;
+			margin-left: 180px;
 			text-align: center;
 		}
+		&__title-last {
+			position: relative;
+			left: 52.5px;
+		}
+		&__description-last {
+			position: relative;
+			left: 72.5px;
+		}
 		&__button.large {
-			width: 330px;
+			width: 320px;
+			position: relative;
+			left: 60px;
+			top: 310px;
 		}
 		&__contact a {
 			position: relative;
 			bottom: 0px;
 			margin: auto 10px;
+			position: relative;
+			top: 20px;
+		}
+		&__contact .button {
+			padding-bottom: 0.5rem;
 		}
 	}
-
+	.button {
+		margin-top: 0rem;
+		line-height: 10px;
+		padding-bottom: 1.2rem;
+	}
 	.about__container,
 	.security__container,
 	.app__container,
@@ -179,11 +199,18 @@
 			left: -100px;
 		}
 		&__title-last {
-			margin-bottom: 30px;
+			position: relative;
+			left: 143px;
 		}
-
 		&__description-last {
-			margin-bottom: 40px;
+			position: relative;
+			left: 165px;
+		}
+		&__button.large {
+			width: 385px;
+			position: relative;
+			left: 120px;
+			top: 310px;
 		}
 	}
 	.button {
@@ -197,21 +224,6 @@
 			position: relative;
 			right: 0;
 			top: 0;
-		}
-	}
-}
-
-@media screen and (min-width: 1380px) {
-	.home {
-		&__text-fourth {
-			position: relative;
-			left: 70px;
-			top: 30px;
-		}
-		&__button.large {
-			width: 450px;
-			position: relative;
-			left: -65px;
 		}
 	}
 }
