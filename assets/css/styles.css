@@ -671,7 +671,7 @@ i {
     font-size: 1.45rem;
   }
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1400px) {
   .home__text-fourth {
     position: relative;
     left: -100px;
