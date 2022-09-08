@@ -124,6 +124,11 @@ svg:nth-child(4n) {
   top: 205px;
 }
 
+i {
+  padding: 0.5rem;
+  font-size: 25px;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 1rem;
@@ -313,11 +318,11 @@ svg:nth-child(4n) {
 }
 .home__button.short {
   position: relative;
-  top: -50px;
+  top: 0px;
 }
 .home__button > a {
   position: relative;
-  bottom: 85px;
+  bottom: 160px;
 }
 .home__button > a:first-child {
   margin-right: 20px;
@@ -331,17 +336,23 @@ svg:nth-child(4n) {
 .home__svg:first-child {
   margin: auto;
 }
+.home__contact a {
+  position: relative;
+  bottom: 100px;
+  margin: auto 10px;
+}
 
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
   color: #1a1a1a;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 3rem;
   font-weight: var(--font-semi-bold);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  line-height: 35px;
 }
 .button:hover {
   background-color: var(--first-color);
@@ -351,6 +362,7 @@ svg:nth-child(4n) {
   display: -ms-flexbox;
   display: flex;
   padding: 0.5rem 0.5rem;
+  line-height: 20px;
 }
 .button-link {
   background: none;
@@ -361,9 +373,10 @@ svg:nth-child(4n) {
   background-color: transparent;
 }
 .button__icon {
-  font-size: 1.5rem;
   position: relative;
   top: 5px;
+  font-size: 25px;
+  padding: 0;
 }
 
 /*=============== FOOTER ===============*/
@@ -509,7 +522,14 @@ svg:nth-child(4n) {
     right: 2rem;
   }
 
+  .button {
+    margin-top: 1rem;
+    line-height: 10px;
+    padding-bottom: 1rem;
+  }
   .button__header {
+    padding: 0.5rem 0.5rem;
+    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -575,14 +595,21 @@ svg:nth-child(4n) {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    text-align: center;
   }
   .home__text-fourth {
     width: 100%;
     position: relative;
     margin-left: 200px;
+    text-align: center;
   }
   .home__button.large {
-    width: 300px;
+    width: 330px;
+  }
+  .home__contact a {
+    position: relative;
+    bottom: 0px;
+    margin: auto 10px;
   }
 
   .about__container,
@@ -634,8 +661,21 @@ svg:nth-child(4n) {
   .home__description-last {
     margin-bottom: 40px;
   }
-  .home__button.large {
-    width: 300px;
+
+  .button {
+    margin-top: 0rem;
+    line-height: 10px;
+    padding-bottom: 1rem;
+  }
+  .button__header {
+    padding: 0.5rem 0.5rem;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: 0;
+    top: 0;
   }
 }
 @media screen and (min-width: 1380px) {
@@ -647,6 +687,6 @@ svg:nth-child(4n) {
   .home__button.large {
     width: 450px;
     position: relative;
-    left: -60px;
+    left: -65px;
   }
 }

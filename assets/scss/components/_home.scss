@@ -50,11 +50,11 @@
 	}
 	&__button.short {
 		position: relative;
-		top: -50px;
+		top: 0px;
 	}
 	&__button > a {
 		position: relative;
-		bottom: 85px;
+		bottom: 160px;
 	}
 	&__button > a:first-child {
 		margin-right: 20px;
@@ -67,5 +67,10 @@
 	}
 	&__svg:first-child {
 		margin: auto;
+	}
+	&__contact a {
+		position: relative;
+		bottom: 100px;
+		margin: auto 10px;
 	}
 }

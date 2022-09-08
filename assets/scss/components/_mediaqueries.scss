@@ -60,7 +60,7 @@
 		justify-content: space-between;
 		position: relative;
 		left: 0;
-		bottom: -200px;
+		bottom: -150px;
 	}
 
 	.large:nth-child(2n) {
@@ -70,11 +70,19 @@
 	.scrollup {
 		right: 2rem;
 	}
-	.button__header {
-		display: flex;
-		position: relative;
-		right: 0;
-		top: 0;
+	.button {
+		margin-top: 1rem;
+		line-height: 10px;
+		padding-bottom: 1rem;
+
+		&__header {
+			padding: 0.5rem 0.5rem;
+			margin-top: 0;
+			display: flex;
+			position: relative;
+			right: 0;
+			top: 0;
+		}
 	}
 
 	svg:first-child {
@@ -114,14 +122,21 @@
 			display: flex;
 			justify-content: space-between;
 			flex-direction: row-reverse;
+			text-align: center;
 		}
 		&__text-fourth {
 			width: 100%;
 			position: relative;
 			margin-left: 200px;
+			text-align: center;
 		}
 		&__button.large {
-			width: 300px;
+			width: 330px;
+		}
+		&__contact a {
+			position: relative;
+			bottom: 0px;
+			margin: auto 10px;
 		}
 	}
 
@@ -170,8 +185,18 @@
 		&__description-last {
 			margin-bottom: 40px;
 		}
-		&__button.large {
-			width: 300px;
+	}
+	.button {
+		margin-top: 0rem;
+		line-height: 10px;
+		padding-bottom: 1rem;
+		&__header {
+			padding: 0.5rem 0.5rem;
+			margin-top: 0;
+			display: flex;
+			position: relative;
+			right: 0;
+			top: 0;
 		}
 	}
 }
@@ -186,7 +211,7 @@
 		&__button.large {
 			width: 450px;
 			position: relative;
-			left: -60px;
+			left: -65px;
 		}
 	}
 }
