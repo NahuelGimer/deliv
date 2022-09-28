@@ -169,9 +169,10 @@
 			margin-bottom: 30px;
 		}
 		&__button.large {
+			display: flex;
+			justify-content: center;
 			width: 400px;
 			position: relative;
-			left: 0px;
 			top: 310px;
 		}
 		&__contact a {
@@ -183,10 +184,6 @@
 		}
 		&__contact .button {
 			padding-bottom: 0.5rem;
-		}
-		&__contact__instagram {
-			width: 68px;
-			height: 59px;
 		}
 	}
 
@@ -236,21 +233,24 @@
 		}
 		&__title-last {
 			position: relative;
-			left: 69px;
+			left: 100px;
 		}
 
 		&__description-last {
 			position: relative;
-			left: 90px;
+			left: 120px;
 		}
 		&__text-fourth {
 			left: 10px;
 			margin-left: 250px;
 		}
+		&__button.large {
+			width: 450px;
+		}
 	}
 	.fa-brands {
 		margin: auto;
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 }

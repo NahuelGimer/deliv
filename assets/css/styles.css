@@ -337,16 +337,20 @@ i {
   bottom: 160px;
   color: rgb(98, 96, 96);
 }
-.home__button > a > i {
+.home__button > a > i:first-child {
+  position: relative;
+  bottom: 0px;
+  font-size: 22px;
   color: rgb(133, 132, 132);
+  line-height: 20px;
 }
 .home__contact__information:first-child.button {
   color: rgb(0, 169, 11);
 }
-.home__contact__information:nth-child(2).button {
+.home__contact__information:nth-child(3).button {
   color: rgb(0, 174, 255);
 }
-.home__contact__information:nth-child(3).button {
+.home__contact__information:nth-child(4).button {
   color: rgb(0, 0, 255);
 }
 .home__button > a:first-child {
@@ -454,6 +458,13 @@ i {
 }
 .button__google {
   color: rgb(0, 0, 0);
+}
+.button__instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /*=============== FOOTER ===============*/
@@ -711,9 +722,14 @@ i {
     margin-bottom: 30px;
   }
   .home__button.large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 400px;
     position: relative;
-    left: 0px;
     top: 310px;
   }
   .home__contact a {
@@ -725,10 +741,6 @@ i {
   }
   .home__contact .button {
     padding-bottom: 0.5rem;
-  }
-  .home__contact__instagram {
-    width: 68px;
-    height: 59px;
   }
 
   .button {
@@ -782,20 +794,23 @@ i {
   }
   .home__title-last {
     position: relative;
-    left: 69px;
+    left: 100px;
   }
   .home__description-last {
     position: relative;
-    left: 90px;
+    left: 120px;
   }
   .home__text-fourth {
     left: 10px;
     margin-left: 250px;
   }
+  .home__button.large {
+    width: 450px;
+  }
 
   .fa-brands {
     margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
