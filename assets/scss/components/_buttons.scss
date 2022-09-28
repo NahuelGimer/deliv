@@ -10,8 +10,13 @@
 
 	&__header {
 		display: flex;
-		padding: 0.5rem 0.5rem;
-		line-height: 20px;
+		padding: 0.1rem 0.1rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	&__header:hover {
+		color: inherit;
+		opacity: 80%;
 	}
 
 	&-link {

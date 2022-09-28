@@ -24,6 +24,16 @@
 			left: 20px;
 		}
 	}
+	.button {
+		margin-top: 1rem;
+		line-height: 10px;
+		padding-bottom: 1rem;
+
+		&__header span {
+			position: relative;
+			top: 5px;
+		}
+	}
 
 	.home__container,
 	.about__container,
@@ -89,7 +99,7 @@
 			display: flex;
 			position: relative;
 			right: 0;
-			top: 0;
+			top: 5px;
 		}
 	}
 
@@ -144,22 +154,24 @@
 		&__text-fourth {
 			width: 100%;
 			position: relative;
-			margin-left: 180px;
+			margin-left: 250px;
 			text-align: center;
+			top: -160px;
 		}
 
 		&__title-last {
 			position: relative;
-			left: 60px;
+			left: 48px;
 		}
 		&__description-last {
 			position: relative;
-			left: 78.5px;
+			left: 70px;
+			margin-bottom: 30px;
 		}
 		&__button.large {
 			width: 400px;
 			position: relative;
-			left: 20px;
+			left: 0px;
 			top: 310px;
 		}
 		&__contact a {
@@ -171,6 +183,10 @@
 		}
 		&__contact .button {
 			padding-bottom: 0.5rem;
+		}
+		&__contact__instagram {
+			width: 68px;
+			height: 59px;
 		}
 	}
 
@@ -210,5 +226,31 @@
 				font-size: 1.45rem;
 			}
 		}
+	}
+}
+@media screen and (min-width: 1420px) {
+	.home {
+		&__button.large a {
+			position: relative;
+			left: 40px;
+		}
+		&__title-last {
+			position: relative;
+			left: 69px;
+		}
+
+		&__description-last {
+			position: relative;
+			left: 90px;
+		}
+		&__text-fourth {
+			left: 10px;
+			margin-left: 250px;
+		}
+	}
+	.fa-brands {
+		margin: auto;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }

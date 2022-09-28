@@ -39,6 +39,12 @@
 		bottom: -30px;
 		left: 40px;
 	}
+
+	&__text-third {
+		position: relative;
+		top: -80px;
+		left: 40px;
+	}
 	&__text-fourth {
 		position: relative;
 		left: -140px;
@@ -67,11 +73,11 @@
 		color: rgb(0, 169, 11);
 	}
 
-	&__contact__information:nth-child(3).button {
+	&__contact__information:nth-child(2).button {
 		color: rgb(0, 174, 255);
 	}
 
-	&__contact__information:nth-child(4).button {
+	&__contact__information:nth-child(3).button {
 		color: rgb(0, 0, 255);
 	}
 
@@ -111,12 +117,22 @@
 	}
 
 	&__contact.large {
-		justify-content: center;
+		display: flex;
+		justify-content: space-between;
 	}
-	&__contact__img {
-		width: 40px;
+	&__contact__img:first-child {
+		width: 34px;
 		padding: 0.5rem 0.5rem;
 		max-height: 40px;
+	}
+
+	&__contact__instagram img {
+		width: 41px;
+		height: 39px;
+	}
+
+	&__button__apple {
+		width: 74px;
 	}
 	&__contact a {
 		position: relative;

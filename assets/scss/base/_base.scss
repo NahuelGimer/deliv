@@ -49,6 +49,11 @@ svg:nth-child(4n) {
 	max-width: 200px;
 }
 
+i {
+	padding: 0.5rem;
+	font-size: 25px;
+}
+
 .short {
 	display: flex;
 	justify-content: center;
@@ -65,7 +70,8 @@ svg:nth-child(4n) {
 	top: 205px;
 }
 
-i {
-	padding: 0.5rem;
-	font-size: 25px;
+.fa-brands {
+	margin: auto;
+	margin-left: 5px;
+	margin-right: 5px;
 }

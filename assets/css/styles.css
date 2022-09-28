@@ -104,6 +104,11 @@ svg:nth-child(4n) {
   max-width: 200px;
 }
 
+i {
+  padding: 0.5rem;
+  font-size: 25px;
+}
+
 .short {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,9 +129,10 @@ svg:nth-child(4n) {
   top: 205px;
 }
 
-i {
-  padding: 0.5rem;
-  font-size: 25px;
+.fa-brands {
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -306,6 +312,11 @@ i {
   bottom: -30px;
   left: 40px;
 }
+.home__text-third {
+  position: relative;
+  top: -80px;
+  left: 40px;
+}
 .home__text-fourth {
   position: relative;
   left: -140px;
@@ -332,10 +343,10 @@ i {
 .home__contact__information:first-child.button {
   color: rgb(0, 169, 11);
 }
-.home__contact__information:nth-child(3).button {
+.home__contact__information:nth-child(2).button {
   color: rgb(0, 174, 255);
 }
-.home__contact__information:nth-child(4).button {
+.home__contact__information:nth-child(3).button {
   color: rgb(0, 0, 255);
 }
 .home__button > a:first-child {
@@ -374,14 +385,24 @@ i {
   margin-bottom: 20px;
 }
 .home__contact.large {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.home__contact__img {
-  width: 40px;
+.home__contact__img:first-child {
+  width: 34px;
   padding: 0.5rem 0.5rem;
   max-height: 40px;
+}
+.home__contact__instagram img {
+  width: 41px;
+  height: 39px;
+}
+.home__button__apple {
+  width: 74px;
 }
 .home__contact a {
   position: relative;
@@ -410,8 +431,13 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.5rem 0.5rem;
-  line-height: 20px;
+  padding: 0.1rem 0.1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.button__header:hover {
+  color: inherit;
+  opacity: 80%;
 }
 .button-link {
   background: none;
@@ -507,6 +533,16 @@ i {
     left: 20px;
   }
 
+  .button {
+    margin-top: 1rem;
+    line-height: 10px;
+    padding-bottom: 1rem;
+  }
+  .button__header span {
+    position: relative;
+    top: 5px;
+  }
+
   .home__container,
 .about__container,
 .security__container,
@@ -585,7 +621,7 @@ i {
     display: flex;
     position: relative;
     right: 0;
-    top: 0;
+    top: 5px;
   }
 
   svg:first-child {
@@ -661,21 +697,23 @@ i {
   .home__text-fourth {
     width: 100%;
     position: relative;
-    margin-left: 180px;
+    margin-left: 250px;
     text-align: center;
+    top: -160px;
   }
   .home__title-last {
     position: relative;
-    left: 60px;
+    left: 48px;
   }
   .home__description-last {
     position: relative;
-    left: 78.5px;
+    left: 70px;
+    margin-bottom: 30px;
   }
   .home__button.large {
     width: 400px;
     position: relative;
-    left: 20px;
+    left: 0px;
     top: 310px;
   }
   .home__contact a {
@@ -687,6 +725,10 @@ i {
   }
   .home__contact .button {
     padding-bottom: 0.5rem;
+  }
+  .home__contact__instagram {
+    width: 68px;
+    height: 59px;
   }
 
   .button {
@@ -731,5 +773,29 @@ i {
   }
   .footer__social-link {
     font-size: 1.45rem;
+  }
+}
+@media screen and (min-width: 1420px) {
+  .home__button.large a {
+    position: relative;
+    left: 40px;
+  }
+  .home__title-last {
+    position: relative;
+    left: 69px;
+  }
+  .home__description-last {
+    position: relative;
+    left: 90px;
+  }
+  .home__text-fourth {
+    left: 10px;
+    margin-left: 250px;
+  }
+
+  .fa-brands {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
