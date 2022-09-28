@@ -22,7 +22,6 @@
 	}
 	&__description {
 		font-size: var(--h3-font-size);
-		color: var(--title-color);
 		position: relative;
 		bottom: 140px;
 	}
@@ -48,6 +47,9 @@
 		position: relative;
 		top: 280px;
 	}
+	&__button:hover > a {
+		color: rgb(133, 132, 132);
+	}
 	&__button.short {
 		position: relative;
 		top: 0px;
@@ -55,12 +57,43 @@
 	&__button > a {
 		position: relative;
 		bottom: 160px;
+		color: rgb(98, 96, 96);
 	}
+	&__button > a > i {
+		color: rgb(133, 132, 132);
+	}
+
+	&__contact__information:first-child.button {
+		color: rgb(0, 169, 11);
+	}
+
+	&__contact__information:nth-child(3).button {
+		color: rgb(0, 174, 255);
+	}
+
+	&__contact__information:nth-child(4).button {
+		color: rgb(0, 0, 255);
+	}
+
 	&__button > a:first-child {
+		line-height: -100px;
 		margin-right: 20px;
+		max-height: 60px;
+	}
+
+	&__button a {
+		padding: 1rem 1rem;
+		padding-top: 0.7rem;
+	}
+
+	&__button a i {
+		position: relative;
+		bottom: -230px;
+		line-height: -330px;
 	}
 	&__button > a:nth-child(2n) {
 		margin-left: 20px;
+		max-height: 60px;
 	}
 	&__svg {
 		margin: auto;
@@ -68,8 +101,32 @@
 	&__svg:first-child {
 		margin: auto;
 	}
+	&__contact {
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__contact__information.button {
+		margin-bottom: 20px;
+	}
+
+	&__contact.large {
+		justify-content: center;
+	}
+	&__contact__img {
+		width: 40px;
+		padding: 0.5rem 0.5rem;
+		max-height: 40px;
+	}
 	&__contact a {
 		position: relative;
+		bottom: 100px;
+		margin: auto 10px;
+
+		margin-bottom: 20px;
+	}
+	&__text {
+		display: none;
 		bottom: 100px;
 		margin: auto 10px;
 	}

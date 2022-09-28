@@ -11,14 +11,8 @@
 	opacity: 0.8;
 	transition: 0.4s;
 
-	&:hover {
-		background-color: var(--first-color);
-		opacity: 1;
-	}
-
 	&__icon {
 		font-size: 1.25rem;
-		color: var(--title-color);
 	}
 }
 

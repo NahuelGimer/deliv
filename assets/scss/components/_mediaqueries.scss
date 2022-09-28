@@ -9,12 +9,20 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.home__img {
-		order: 1;
-	}
+	.home {
+		&__img {
+			order: 1;
+			width: 1px;
+		}
 
-	.home__svg {
-		max-width: 500px;
+		&__svg {
+			max-width: 500px;
+		}
+
+		&__contact.large {
+			position: relative;
+			left: 20px;
+		}
 	}
 
 	.home__container,
@@ -105,6 +113,11 @@
 		&__img {
 			width: 540px;
 		}
+
+		&__button.large a {
+			position: relative;
+			left: 15px;
+		}
 		&__description {
 			padding-right: 5rem;
 		}
@@ -124,24 +137,29 @@
 			flex-direction: row-reverse;
 			text-align: center;
 		}
+		&__text {
+			display: inherit;
+			flex-direction: column;
+		}
 		&__text-fourth {
 			width: 100%;
 			position: relative;
 			margin-left: 180px;
 			text-align: center;
 		}
+
 		&__title-last {
 			position: relative;
-			left: 52.5px;
+			left: 60px;
 		}
 		&__description-last {
 			position: relative;
-			left: 72.5px;
+			left: 78.5px;
 		}
 		&__button.large {
-			width: 320px;
+			width: 400px;
 			position: relative;
-			left: 60px;
+			left: 20px;
 			top: 310px;
 		}
 		&__contact a {
@@ -155,11 +173,13 @@
 			padding-bottom: 0.5rem;
 		}
 	}
+
 	.button {
 		margin-top: 0rem;
 		line-height: 10px;
 		padding-bottom: 1.2rem;
 	}
+
 	.about__container,
 	.security__container,
 	.app__container,
@@ -189,42 +209,6 @@
 			&-link {
 				font-size: 1.45rem;
 			}
-		}
-	}
-}
-
-@media screen and (min-width: 1400px) {
-	.home {
-		&__text-fourth {
-			position: relative;
-			left: -100px;
-		}
-		&__title-last {
-			position: relative;
-			left: 143px;
-		}
-		&__description-last {
-			position: relative;
-			left: 165px;
-		}
-		&__button.large {
-			width: 385px;
-			position: relative;
-			left: 120px;
-			top: 310px;
-		}
-	}
-	.button {
-		margin-top: 0rem;
-		line-height: 10px;
-		padding-bottom: 1rem;
-		&__header {
-			padding: 0.5rem 0.5rem;
-			margin-top: 0;
-			display: flex;
-			position: relative;
-			right: 0;
-			top: 0;
 		}
 	}
 }

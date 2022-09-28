@@ -1,18 +1,12 @@
 /*=============== BUTTONS ===============*/
 .button {
 	display: inline-block;
-	background-color: var(--first-color);
-	color: #1a1a1a; // Use color black for yellow
 	padding: 0.5rem 0.8rem;
-	border-radius: 3rem;
 	font-weight: var(--font-semi-bold);
-	transition: 0.3s;
 	line-height: 35px;
-
-	&:hover {
-		color: inherit;
-		box-shadow: 0px 0px 10px -4px #000;
-	}
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0px 0px 10px -6px #000;
 
 	&__header {
 		display: flex;
@@ -23,7 +17,6 @@
 	&-link {
 		background: none;
 		padding: 0;
-		color: var(--title-color);
 	}
 
 	&__icon {
@@ -31,5 +24,11 @@
 		top: 5px;
 		font-size: 25px;
 		padding: 0;
+	}
+	&__flex:hover {
+		color: inherit;
+	}
+	&__google {
+		color: rgb(0, 0, 0);
 	}
 }
